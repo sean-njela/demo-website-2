@@ -1,4 +1,4 @@
-## Project info
+## LIVE PROJECT => https://champion-social-hub.lovable.app/
 
 **Use your preferred IDE**
 
