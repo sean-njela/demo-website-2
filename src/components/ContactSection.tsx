@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -11,30 +10,28 @@ const ContactSection = () => {
   
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // This would be connected to an actual email service in production
     toast({
-      title: "Message sent!",
-      description: "Thanks for reaching out. We'll get back to you soon.",
+      title: "Wiadomość wysłana!",
+      description: "Dziękujemy za kontakt. Odpowiemy najszybciej jak to możliwe.",
     });
-    // Reset form
     (e.target as HTMLFormElement).reset();
   };
   
   return (
     <section className="container section-padding">
-      <h2 className="section-title text-center">Get in Touch</h2>
+      <h2 className="section-title text-center">Skontaktuj się</h2>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
         <div className="bg-paleblue p-6 md:p-10 rounded-lg">
-          <h3 className="text-xl font-bold mb-6">Send a Message</h3>
+          <h3 className="text-xl font-bold mb-6">Wyślij Wiadomość</h3>
           
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-1">Name</label>
+                <label htmlFor="name" className="block text-sm font-medium mb-1">Imię</label>
                 <Input 
                   id="name" 
-                  placeholder="Your name" 
+                  placeholder="Twoje imię" 
                   required 
                   className="bg-white"
                 />
@@ -44,7 +41,7 @@ const ContactSection = () => {
                 <Input 
                   id="email" 
                   type="email" 
-                  placeholder="Your email" 
+                  placeholder="Twój email" 
                   required 
                   className="bg-white"
                 />
@@ -52,19 +49,19 @@ const ContactSection = () => {
             </div>
             
             <div className="mb-4">
-              <label htmlFor="subject" className="block text-sm font-medium mb-1">Subject</label>
+              <label htmlFor="subject" className="block text-sm font-medium mb-1">Temat</label>
               <Input 
                 id="subject" 
-                placeholder="Message subject" 
+                placeholder="Temat wiadomości" 
                 className="bg-white"
               />
             </div>
             
             <div className="mb-6">
-              <label htmlFor="message" className="block text-sm font-medium mb-1">Message</label>
+              <label htmlFor="message" className="block text-sm font-medium mb-1">Wiadomość</label>
               <Textarea 
                 id="message" 
-                placeholder="Your message" 
+                placeholder="Twoja wiadomość" 
                 rows={5} 
                 required 
                 className="bg-white resize-none"
@@ -72,14 +69,14 @@ const ContactSection = () => {
             </div>
             
             <Button type="submit" className="w-full bg-navy hover:bg-navy-light">
-              Send Message
+              Wyślij Wiadomość
             </Button>
           </form>
         </div>
         
         <div>
           <div className="mb-8">
-            <h3 className="text-xl font-bold mb-4">Contact Information</h3>
+            <h3 className="text-xl font-bold mb-4">Informacje Kontaktowe</h3>
             <div className="space-y-4">
               <div className="flex items-start">
                 <Mail className="mr-3 text-navy flex-shrink-0" />
@@ -94,7 +91,7 @@ const ContactSection = () => {
               <div className="flex items-start">
                 <Phone className="mr-3 text-navy flex-shrink-0" />
                 <div>
-                  <p className="font-medium">Phone</p>
+                  <p className="font-medium">Telefon</p>
                   <a href="tel:+48123456789" className="text-gray-600 hover:text-navy">
                     +48 123 456 789
                   </a>
@@ -104,15 +101,15 @@ const ContactSection = () => {
               <div className="flex items-start">
                 <MapPin className="mr-3 text-navy flex-shrink-0" />
                 <div>
-                  <p className="font-medium">Location</p>
-                  <p className="text-gray-600">Warsaw, Poland</p>
+                  <p className="font-medium">Lokalizacja</p>
+                  <p className="text-gray-600">Warszawa, Polska</p>
                 </div>
               </div>
             </div>
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Follow Me</h3>
+            <h3 className="text-xl font-bold mb-4">Obserwuj Mnie</h3>
             <div className="flex gap-4">
               <a 
                 href="https://instagram.com" 
@@ -122,7 +119,6 @@ const ContactSection = () => {
               >
                 <Instagram />
               </a>
-              {/* Add more social icons as needed */}
             </div>
           </div>
           

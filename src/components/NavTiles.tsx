@@ -5,24 +5,24 @@ import { Link } from 'react-router-dom';
 
 const tiles = [
   {
-    title: 'Gallery',
+    title: 'Galeria',
     path: '/gallery',
-    description: 'View photos and videos'
+    description: 'Zobacz zdjęcia i filmy'
   },
   {
-    title: 'Appearances',
+    title: 'Wydarzenia',
     path: '/appearances',
-    description: 'Events & schedules'
+    description: 'Wydarzenia i harmonogram'
   },
   {
-    title: 'Personal Trainings',
+    title: 'Treningi Personalne',
     path: '/trainings',
-    description: 'Work with me'
+    description: 'Trenuj ze mną'
   },
   {
-    title: 'Contact',
+    title: 'Kontakt',
     path: '/contact',
-    description: 'Get in touch'
+    description: 'Skontaktuj się'
   }
 ];
 

@@ -1,45 +1,44 @@
 
 import React from 'react';
 
-// Mock media logos and features
 const mediaFeatures = [
   {
     id: 1,
     logo: 'https://placehold.co/200x80?text=ESPN',
-    title: 'The Rising Star: Piotr\'s Journey to the Top',
-    excerpt: 'An exclusive interview with the champion on his path to success and future goals.'
+    title: 'Wschodząca Gwiazda: Droga Piotra na Szczyt',
+    excerpt: 'Ekskluzywny wywiad z mistrzem o jego drodze do sukcesu i przyszłych celach.'
   },
   {
     id: 2,
     logo: 'https://placehold.co/200x80?text=Sports+Illustrated',
-    title: 'Training Methods of Champions: Inside Look',
-    excerpt: 'How Siegoczyński revolutionized training methods in professional kickboxing.'
+    title: 'Metody Treningu Mistrzów: Spojrzenie od Środka',
+    excerpt: 'Jak Siegoczyński zrewolucjonizował metody treningowe w profesjonalnym kickboxingu.'
   },
   {
     id: 3,
     logo: 'https://placehold.co/200x80?text=BBC+Sports',
-    title: 'Champion Mindset: Mental Toughness',
-    excerpt: 'Piotr shares his mental preparation tactics and mindset secrets.'
+    title: 'Mentalność Mistrza: Siła Psychiczna',
+    excerpt: 'Piotr dzieli się swoimi taktykami przygotowania mentalnego i sekretami sukcesu.'
   },
   {
     id: 4,
     logo: 'https://placehold.co/200x80?text=NBC',
-    title: 'Beyond The Ring: Piotr\'s Community Work',
-    excerpt: 'How the champion is giving back through youth programs and mentorship.'
+    title: 'Poza Ringiem: Działalność Społeczna Piotra',
+    excerpt: 'Jak mistrz oddaje społeczności poprzez programy młodzieżowe i mentoring.'
   },
 ];
 
 const MediaSection = () => {
   return (
     <section className="container section-padding">
-      <h2 className="section-title text-center">Media Features</h2>
+      <h2 className="section-title text-center">W Mediach</h2>
       
       <div className="flex overflow-x-auto gap-8 py-6 mb-10 no-scrollbar">
         {Array.from({ length: 8 }).map((_, index) => (
           <img 
             key={index}
             src={`https://placehold.co/180x60?text=Media+${index + 1}`}
-            alt={`Media partner ${index + 1}`}
+            alt={`Partner medialny ${index + 1}`}
             className="h-12 object-contain grayscale hover:grayscale-0 transition-all"
           />
         ))}
@@ -55,12 +54,12 @@ const MediaSection = () => {
                 className="h-10 object-contain"
               />
               <div className="h-12 w-px bg-gray-200"></div>
-              <span className="text-sm text-gray-500">Featured Article</span>
+              <span className="text-sm text-gray-500">Artykuł</span>
             </div>
             <h3 className="font-bold text-lg mb-2">{item.title}</h3>
             <p className="text-gray-600">{item.excerpt}</p>
             <button className="mt-4 text-navy font-medium hover:text-navy-light transition-colors">
-              Read More
+              Czytaj Więcej
             </button>
           </div>
         ))}

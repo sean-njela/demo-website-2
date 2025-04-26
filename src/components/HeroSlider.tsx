@@ -1,26 +1,25 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 
-const HeroSlider = () => {
-  const slides = [
-    {
-      title: "Piotr Siegoczyński",
-      subtitle: "Champion",
-      image: "https://images.unsplash.com/photo-1517438322307-e67111335449?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-    },
-    {
-      title: "Piotr Siegoczyński",
-      subtitle: "Coach",
-      image: "https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1953&q=80"
-    },
-    {
-      title: "Piotr Siegoczyński",
-      subtitle: "Inspiration",
-      image: "https://images.unsplash.com/photo-1517838277536-f5f99be97cd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-    }
-  ];
+const slides = [
+  {
+    title: "Piotr Siegoczyński",
+    subtitle: "Mistrz",
+    image: "https://images.unsplash.com/photo-1517438322307-e67111335449?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+  },
+  {
+    title: "Piotr Siegoczyński",
+    subtitle: "Trener",
+    image: "https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1953&q=80"
+  },
+  {
+    title: "Piotr Siegoczyński",
+    subtitle: "Inspiracja",
+    image: "https://images.unsplash.com/photo-1517838277536-f5f99be97cd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+  }
+];
 
+const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {

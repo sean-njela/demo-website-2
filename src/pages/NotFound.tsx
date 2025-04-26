@@ -19,10 +19,10 @@ const NotFound = () => {
       <div className="text-center max-w-md mx-auto">
         <h1 className="text-5xl font-bold text-navy mb-4">404</h1>
         <p className="text-xl text-gray-700 mb-6">
-          Oops! The page you're looking for cannot be found.
+          Ups! Strona której szukasz nie istnieje.
         </p>
         <Button asChild className="bg-navy hover:bg-navy-light">
-          <Link to="/">Return to Home</Link>
+          <Link to="/">Wróć do Strony Głównej</Link>
         </Button>
       </div>
     </div>

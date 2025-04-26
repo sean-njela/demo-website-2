@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -38,15 +37,20 @@ const Navbar = () => {
         {/* Desktop menu */}
         <nav className="hidden md:block">
           <ul className="flex gap-6">
-            {['Gallery', 'Appearances', 'Personal Trainings', 'Contact'].map((item) => (
-              <li key={item}>
+            {[
+              ['Galeria', 'gallery'],
+              ['Wydarzenia', 'appearances'],
+              ['Treningi Personalne', 'personal-trainings'],
+              ['Kontakt', 'contact']
+            ].map(([label, path]) => (
+              <li key={path}>
                 <Link 
-                  to={`/${item.toLowerCase().replace(' ', '-')}`}
+                  to={`/${path}`}
                   className={`font-medium transition-colors hover:text-navy ${
                     isScrolled ? 'text-gray-700' : 'text-white'
                   }`}
                 >
-                  {item}
+                  {label}
                 </Link>
               </li>
             ))}
@@ -68,7 +72,7 @@ const Navbar = () => {
           <Button 
             className={isScrolled ? 'bg-navy hover:bg-navy-light' : 'bg-white text-navy hover:bg-paleblue'}
           >
-            Book Now
+            Zarezerwuj
           </Button>
         </div>
         
@@ -90,14 +94,19 @@ const Navbar = () => {
           <div className="absolute top-full left-0 right-0 bg-white shadow-md py-4 md:hidden">
             <nav className="container">
               <ul className="flex flex-col gap-3">
-                {['Gallery', 'Appearances', 'Personal Trainings', 'Contact'].map((item) => (
-                  <li key={item}>
+                {[
+                  ['Galeria', 'gallery'],
+                  ['Wydarzenia', 'appearances'],
+                  ['Treningi Personalne', 'personal-trainings'],
+                  ['Kontakt', 'contact']
+                ].map(([label, path]) => (
+                  <li key={path}>
                     <Link 
-                      to={`/${item.toLowerCase().replace(' ', '-')}`}
+                      to={`/${path}`}
                       className="block py-2 text-gray-700 hover:text-navy font-medium"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      {item}
+                      {label}
                     </Link>
                   </li>
                 ))}
@@ -112,7 +121,7 @@ const Navbar = () => {
                   <Instagram size={20} />
                 </a>
                 <Button className="bg-navy hover:bg-navy-light">
-                  Book Now
+                  Zarezerwuj
                 </Button>
               </div>
             </nav>

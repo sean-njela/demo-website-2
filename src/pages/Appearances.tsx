@@ -9,10 +9,10 @@ const Appearances = () => {
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container">
-          <h1 className="text-3xl md:text-4xl font-bold mb-6">Appearances</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-6">Wydarzenia</h1>
           <p className="text-gray-600">
-            This page is under construction. Soon you'll find Piotr's upcoming events, 
-            seminars, and public appearances schedule here.
+            Ta strona jest w budowie. Wkrótce znajdziesz tu harmonogram nadchodzących wydarzeń, 
+            seminariów i wystąpień publicznych Piotra.
           </p>
         </div>
       </main>
