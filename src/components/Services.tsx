@@ -7,7 +7,7 @@ const services = [
   {
     id: 1,
     title: 'Personal Training',
-    description: 'One-on-one coaching tailored to your specific goals, whether you're a beginner or professional athlete.',
+    description: 'One-on-one coaching tailored to your specific goals, whether you\'re a beginner or professional athlete.',
     priceLabel: 'From €70/session',
     image: 'https://images.unsplash.com/photo-1554284126-aa88f22d8b74?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80'
   },
