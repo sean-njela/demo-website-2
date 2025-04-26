@@ -1,12 +1,5 @@
 ## Project info
 
-**URL**: https://lovable.dev/projects/abe76eda-1b83-44e0-b805-e4651a423215
-
-## How can I edit this code?
-
-
-[Lovable Project](https://lovable.dev/projects/abe76eda-1b83-44e0-b805-e4651a423215) and start prompting.
-
 **Use your preferred IDE**
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. 
